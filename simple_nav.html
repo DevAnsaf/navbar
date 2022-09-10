@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        html{
+            background-color: antiquewhite;
+        }
+        body{ height: 800px; width: 800px;margin: 100px auto; background-color: grey;}
+#main
+{
+   /* display: flex; */
+   background-color: red;
+   justify-content: center;
+
+}
+
+#main ul
+{
+    list-style-type: none;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    
+
+}
+#main ul li
+{
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    /* float: left; */
+    text-align: center;
+    line-height: 50px;
+    
+}
+/*be aware  of which were hiding (ul ul) */
+#main ul ul 
+{
+    display: none;
+}
+
+#main li:hover
+{
+    background-color: antiquewhite;
+    /* position: relative; */
+    
+}
+
+#main ul li:hover > ul
+{
+    display:block;
+    
+}
+.list
+{
+    list-style-type: none;
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+   <ul>
+    <li>home</li>
+   <li>contact
+    <ul>
+        <li>c1</li>
+        <li>c2</li>
+        <li>c3</li>
+    </ul>
+   </li>
+   <li>about</li>
+</ul>
+    </div>
+
+</body>
+</html>

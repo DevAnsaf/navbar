@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+
+        }
+
+        html
+        {
+            background-color: aquamarine;
+        }
+        
+        body
+        {
+            width: 1000px;
+            height: 800px;
+            background-color: grey;
+            margin: 100px auto;
+
+        }
+
+.px
+{
+    text-align: center;
+    font-size: 30px;
+    color: wheat;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+}
+       
+
+        #container
+        {
+            /* margin-left: -100px; */
+            /* display: flex; */
+            justify-content: center;
+            background-color: red;
+            
+            
+            
+        }
+
+        #container ul
+        {
+            list-style-type: none;
+            /*______________use display flex____________*/
+                    
+                        display: flex;
+
+            /*__________________________________________*/
+           
+            /*use "relative" for bring forward dropdown list when hover on text/ paragraphs*/
+            position: relative;
+            justify-content: center;
+            
+        }
+
+        #container ul li
+        {
+            background-color: purple;
+            color: white;
+            width: 200px;
+            height: 50px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            text-align: center;
+            /*line height for move text top to bottom*/
+            line-height: 50px;
+            margin: 0.8px;
+
+            /*use "flex" on unordered-list (not container) or use "float" on list items*/
+                /* float: left; */
+           
+            
+        }
+    
+        .link
+            {
+                text-decoration: none;
+                color: aliceblue;
+                font-size: 25px;
+            }
+            
+
+    #container li:hover
+    {
+        background-color: aqua;
+        color: black;
+
+    }
+
+        #container .link:hover
+        {
+                
+                color: black ;
+                
+                
+        }
+
+        #container ul ul 
+        {
+            display:none;
+        }
+
+        #container ul li:hover > ul
+        {
+            display: block;
+        }
+
+
+    #container ul ul ul
+    {
+        /*aligning 3rd ul*/
+        margin-left: 200px;
+        transform: translateY(-50px);
+    }  
+    
+    .box1
+    {
+        height: 600px;
+        width: 250px;
+        background-color:blue;
+        /*to bring next div nearby*/
+        display: inline-flex;
+        font-size: 50px;
+
+
+    }
+    
+    .box2
+    {
+        height: 100px;
+        width: 1000px;
+        background-color: black;
+        color: aliceblue;
+        
+        
+
+    }
+    .box3
+    {
+        padding: 0px;
+        margin: 0px;
+        font-size:50px;
+        justify-content: center;
+       border-radius: 50px;
+        height: 400px;
+        width: 650px;
+        /*to bring next div nearby*/
+        display:inline-flex;
+        background-color: blueviolet;
+       
+ 
+    }
+    h1
+    {
+    text-align: center;
+    font-size: 50px;
+    }
+    span
+    {
+        font-size: 20px;
+        display: block;
+        text-align: justify;
+        top: 50px;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="px"><p>DROPDOWN LIST with LINKS and POSITIONS</p></div>
+    <div id="container">
+        <ul>
+            <li><a class="link " href="#"> Home </a></li>
+            <li><a class="link" href="#"> Services </a>
+                <ul>
+                
+                    <li><a class="link" href="#">Call</a></li>
+                    <li><a class="link" href="#">Messages</a>
+                        <ul>
+                            <li><a class="link" href="#">Text</a></li>
+                            <li><a class="link" href="#">Multimedia</a></li>
+                            <li><a class="link" href="#">Fake</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a class="link" href="#">Audio</a></li>
+                    <li><a class="link" href="#">Video</a></li>
+                </ul>
+            </li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Contact</a></li>
+        </ul>
+
+    </div>
+    
+  <div class="box1">Box1
+   
+  </div>
+  <div class="box3"> <span><h1>Box3</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corporis rem minus quae, optio magni sit, repellat dolorum harum modi est recusandae impedit esse magnam libero, nobis soluta? Voluptate, illo!</span>
+  </div>
+  <div class="box2">Box2</div>
+  
+</body>
+</html>.
